@@ -1,2 +1,5 @@
 <?php
-// write your program here
+function disemvowel(string $comment): string
+{
+    return ''; // write your program here
+}

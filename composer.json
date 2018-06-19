@@ -1,0 +1,17 @@
+{
+    "name": "phplimbe/2018-06-code-katas",
+    "description": "Code Katas challenge @ Aranere",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Gabriel Somoza",
+            "email": "gabriel@strategery.io"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    }
+}
