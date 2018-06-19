@@ -15,3 +15,5 @@ Your program should output "true" if the hand is a flush, "false" otherwise.
 
 ['AD', '4S', '7H', 'KS', '10S'] ==> false
 ```
+
+**Source: https://www.codewars.com/kata/determine-if-the-poker-hand-is-flush**

@@ -5,8 +5,7 @@
 #### Requirements
 * PHP 7.1 or greater
 * or [Vagrant](https://www.vagrantup.com/)
-* or [Docker](https://www.docker.com/community-edition#/download) and 
-[Docker Compose](https://docs.docker.com/compose/install/)
+* or [Docker](https://www.docker.com/community-edition#/download)
 
 #### With PHP >= 7.1
 * Run `composer install`
@@ -21,7 +20,9 @@
 * Use the binary at `./bin/composer` (from the project root) to run Composer commands.
 * Use `./bin/composer run-script [test|check]` to run the `test` and `check` scripts.
 
-NOTE: only tested with Docker CE 18.03 in OSx 10.13.5
+NOTE: only tested with Docker CE 18.03 in OSx 10.13.5, but it should work in other OSx versions and Linux.
+
+WINDOWS: read the contents of `./bin/composer` and adapt for your OS.
 
 ### Guidelines
 
