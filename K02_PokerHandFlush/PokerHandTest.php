@@ -1,19 +1,22 @@
 <?php
 declare(strict_types=1);
-require 'solution.php';
 
-final class FlushTest extends \PHPUnit\Framework\TestCase
+namespace PHPLimburg\K02_PokerHandFlush;
+
+//use PHPLimburg\K02_PokerHandFlush\PokerHandSolution as PokerHand;
+
+final class PokerHandTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * testEquals
      * @dataProvider handsProvider
      * @param bool $expected
-     * @param string ...$hand
+     * @param string[] $cards
      * @return void
      */
-    public function testEquals(bool $expected, string ...$hand)
+    public function testEquals(bool $expected, string ...$cards)
     {
-        $this->assertEquals($expected, checkIfFlush($hand));
+        $this->assertEquals($expected, (new PokerHand($cards))->isFlush());
     }
 
     public function handsProvider()

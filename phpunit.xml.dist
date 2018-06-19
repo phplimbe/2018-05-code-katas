@@ -2,24 +2,29 @@
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/7.2/phpunit.xsd"
          bootstrap="vendor/autoload.php"
-         forceCoversAnnotation="true"
-         beStrictAboutCoversAnnotation="true"
          beStrictAboutOutputDuringTests="true"
          beStrictAboutTodoAnnotatedTests="true"
          colors="true"
          verbose="false">
     <testsuites>
-        <testsuite name="Disemvowel Trools">
-            <directory suffix="Test.php">0-disemvowel-trolls</directory>
+        <testsuite name="Disemvowel Trolls">
+            <directory suffix="Test.php">K01_DisemvowelTrolls</directory>
+        </testsuite>
+        <testsuite name="Poker Hand Flush">
+            <directory suffix="Test.php">K02_PokerHandFlush</directory>
         </testsuite>
         <testsuite name="Avengers Tickets">
-            <directory suffix="Test.php">1-avengers-tickets</directory>
+            <directory suffix="Test.php">K03_AvengersTickets</directory>
         </testsuite>
     </testsuites>
 
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
-            <directory suffix="program.php">.</directory>
+            <directory suffix=".php">K*</directory>
+            <exclude>
+                <directory>vendor</directory>
+                <directory suffix="Test.php">K*</directory>
+            </exclude>
         </whitelist>
     </filter>
 </phpunit>

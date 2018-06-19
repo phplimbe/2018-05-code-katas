@@ -1,8 +1,10 @@
 <?php
 declare(strict_types=1);
-require "program.php";
+namespace PHPLimburg\K01_DisemvowelTrolls;
 
-final class DisemvowelTest extends \PHPUnit\Framework\TestCase
+//use PHPLimburg\K01_DisemvowelTrolls\TrollFighterSolution as TrollFighter;
+
+final class TrollFighterTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @dataProvider commentsProvider
@@ -12,7 +14,8 @@ final class DisemvowelTest extends \PHPUnit\Framework\TestCase
      */
     public function testEquals(string $comment, string $expectation)
     {
-        $this->assertEquals($expectation, disemvowel($comment));
+        //$this->assertEquals($expectation, TrollFighter::disemvowel($comment));
+        $this->assertEquals($expectation, TrollFighter::disemvowel($comment));
     }
 
     public function commentsProvider()

@@ -5,12 +5,13 @@ Your program will be passed a list of 5 strings, each representing a poker card 
 
 Your program should output "true" if the hand is a flush, "false" otherwise.
 
-The possible card values are 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K and A.
+* The possible card values are 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K and A.
+* Work on `PokerHand.php`
 
 ### Examples:
 
 ```
-AS 3S 9S KS 4S ==> true
+['AS', '3S', '9S', 'KS', '4S'] ==> true
 
-AD 4S 7H KS 10S ==> false
+['AD', '4S', '7H', 'KS', '10S'] ==> false
 ```

@@ -1,21 +1,24 @@
 <?php
 declare(strict_types=1);
-require "program.php";
 
-final class TicketsTest extends \PHPUnit\Framework\TestCase
+namespace PHPLimburg\K03_AvengersTickets;
+
+//use PHPLimburg\K03_AvengersTickets\ClerkSolution as Clerk;
+
+final class ClerkTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * Test constructor.
-     * @dataProvider provider
+     * @dataProvider queuesProvider
      * @param bool $expected
-     * @param int ...$peopleInLine
+     * @param int ...$queue
      */
-    public function testCases(bool $expected, ...$peopleInLine)
+    public function testCases(bool $expected, int ...$queue)
     {
-        $this->assertEquals($expected, sellTickets($peopleInLine));
+        $this->assertEquals($expected, (new Clerk())->sellTickets($queue));
     }
 
-    public function provider()
+    public function queuesProvider()
     {
         return [
             [true, 25, 25, 50, 50],
