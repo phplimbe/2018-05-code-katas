@@ -30,3 +30,8 @@ WINDOWS: read the contents of `./bin/composer` and adapt for your OS.
 2. Each Kata has a `README.md` with the assignment.
 3. For an extra challenge, don't move to the next Kata until you finished with the previous one.  
 4. Increase your chances of solving a Kata by working together with someone else!
+
+### License
+
+Some or all Katas are Copyright © 2018 Entrefuse, and are released under the FreeBSD 2-Clause License as indicated in 
+the Codewars [terms of service](https://www.codewars.com/about/terms-of-service). 
