@@ -6,6 +6,6 @@ final class TrollFighter
 {
     public static function disemvowel(string $comment): string
     {
-        return ''; // write your program here
+        return ''; // write the solution here
     }
 }

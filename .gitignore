@@ -1,3 +1,4 @@
+/.vagrant
 /vendor/
-/**/Solution/
-*Solution.php
+**/*Solution.php
+*.log

@@ -1,12 +1,31 @@
 # Code Katas
 
-## Guidelines
+### Installation
 
-1. You can write the solution in `program.php`. If you're using another language, you may want to adjust the `PROGRAM` 
-and `SOLUTION_BIN` variables in `check.sh` so that your solution can be executed correctly.
-2. Input will be sent via STDIN.
-3. Output should be printed to STDOUT.
+#### Requirements
+* PHP 7.1 or greater
+* or [Vagrant](https://www.vagrantup.com/)
+* or [Docker](https://www.docker.com/community-edition#/download) and 
+[Docker Compose](https://docs.docker.com/compose/install/)
 
-## Tips
-PHP makes input arguments available at the `$argv` variable. The first element (`$argv[0]`) is the name of the program 
-itself (e.g. `program.php`), but every argument after that are the actual arguments.
+#### With PHP >= 7.1
+* Run `composer install`
+* Get coding!
+
+#### With Vagrant
+* Run `vagrant up`
+* SSH into the VM: `vagrant ssh`
+* Follow the steps under "With PHP"
+
+#### With Docker
+* Use the binary at `./bin/composer` (from the project root) to run Composer commands.
+* Use `./bin/composer run-script [test|check]` to run the `test` and `check` scripts.
+
+NOTE: only tested with Docker CE 18.03 in OSx 10.13.5
+
+### Guidelines
+
+1. Start by the first Kata (K01) and work your way down.
+2. Each Kata has a `README.md` with the assignment.
+3. For an extra challenge, don't move to the next Kata until you finished with the previous one.  
+4. Increase your chances of solving a Kata by working together with someone else!

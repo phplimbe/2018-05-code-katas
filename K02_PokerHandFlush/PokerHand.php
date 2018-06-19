@@ -13,6 +13,6 @@ final class PokerHand
 
     function isFlush(): bool
     {
-        return false; // write your program here
+        return false; // write the solution here
     }
 }

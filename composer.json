@@ -18,5 +18,9 @@
         "psr-4": {
             "PHPLimburg\\": "."
         }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit",
+        "check": "./vendor/bin/phpunit --filter"
     }
 }
